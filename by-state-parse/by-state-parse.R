@@ -6,6 +6,7 @@ library(openxlsx)
 
 nics <- list()
 
+nics$df2015 <- extract_areas('raw-pdfs/2015.pdf', 4) %>% .[[1]]
 nics$df2016 <- extract_areas('raw-pdfs/2016.pdf', 4) %>% .[[1]]
 nics$df2017 <- extract_areas('raw-pdfs/2017.pdf', 4) %>% .[[1]]
 nics$df2018 <- extract_areas('raw-pdfs/2018.pdf', 2) %>% .[[1]]
